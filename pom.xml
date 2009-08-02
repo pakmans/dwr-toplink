@@ -1,0 +1,77 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.destaquenet</groupId>
+    <artifactId>dwr-toplink</artifactId>
+    <packaging>jar</packaging>
+    <inceptionYear>2009</inceptionYear>
+    <version>0.1-SNAPSHOT</version>
+    <name>dwr-toplink</name>
+    <url>http://github.com/danielfm/dwr-toplink/tree</url>
+    <description>DWR-Toplink is a Toplink-aware bean converter for DWR 3 that ignores
+non-initialized lazy relationships during the serialization step.
+    </description>
+
+    <licenses>
+        <license>
+            <name>Apache 2.0</name>
+            <comments>Apache is a commercial-friendly open source license.</comments>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/danielfm/dwr-toplink.git</connection>
+        <url>http://github.com/danielfm/dwr-toplink/tree</url>
+    </scm>
+
+    <organization>
+        <name>Destaquenet Technology Solutions</name>
+        <url>http://www.destaquenet.com/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>danielfm</id>
+            <name>Daniel Fernandes Martins</name>
+            <email>daniel@destaquenet.com</email>
+            <organization>Destaquenet Technology Solutions</organization>
+            <organizationUrl>http://www.destaquenet.com/</organizationUrl>
+            <timezone>-3</timezone>
+            <url>http://weblog.destaquenet.com/</url>
+        </developer>
+    </developers>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.directwebremoting</groupId>
+            <artifactId>dwr</artifactId>
+            <version>3.0.M1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>toplink.essentials</groupId>
+            <artifactId>toplink-essentials</artifactId>
+            <version>2.1-60f</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.0.2</version>
+                <configuration>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+
