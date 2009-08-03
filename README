@@ -1,0 +1,83 @@
+DWR-Toplink
+-----------
+
+DWR-Toplink is a Toplink-aware bean converter for DWR 3 that ignores
+non-initialized lazy relationships during the serialization step.
+
+This is an open source project licenced under the terms of the Apache 2.0
+License and sponsored by Destaquenet Technology Solutions, a brazilian software
+development and consultancy startup.
+
+
+Instalation
+-----------
+
+First, download the DWR-Toplink JAR file and add it to your project CLASSPATH.
+
+If your project uses Maven, you can declare DWR-Toplink as a dependency. To be
+able to do this, you must first install it in your local repository either by:
+
+1) building and installing DWR-Toplink from the source (see the next section,
+'Building'); or
+
+2) downloading the DWR-Toplink JAR file from the GitHub download page[1] and
+installing it in your local repository:
+
+    $ mvn install:install-file -DgroupId=com.destaquenet -DartifactId=dwr-toplink \
+                               -Dversion=LIB_VERSION_HERE -Dpackaging=jar
+                               -Dfile=/path/to/file
+
+
+Now you can change your project pom.xml file to add DWR-Toplink as a
+dependency:
+
+    <dependency>
+        <groupId>com.destaquenet</groupId>
+        <artifactId>dwr-toplink</artifactId>
+        <version>LIB_VERSION_HERE</version>
+    </dependency>
+
+
+Building
+--------
+
+This project uses Apache Maven, so you have to install it in your machine if
+you don't have it already.
+
+Then, run the following command line to build DWR-Toplink and install it in
+your local repository:
+
+    $ mvn install
+
+
+Usage
+-----
+
+Open the dwr.xml file and do the following changes:
+
+    <dwr>
+        <init>
+            <!-- Declares the custom bean converter -->
+            <converter id="toplink" class="com.destaquenet.dwrtoplink.ToplinkConverter"/>
+        </init>
+        <allow>
+            <!-- Uses the custom bean converter to serialize your entities -->
+            <convert converter="toplink" match="your.project.bean.YourBean"/>
+        </allow>
+    </dwr>
+
+
+Links
+-----
+
+[1] GitHub download page - http://github.com/danielfm/dwr-toplink/downloads/
+
+
+Credits
+-------
+
+    Author:  Daniel Fernandes Martins <daniel@destaquenet.com>
+    Company: Destaquenet Technology Solutions <http://www.destaquenet.com/>
+
+
+--EOF
