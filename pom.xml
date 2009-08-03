@@ -4,7 +4,7 @@
     <artifactId>dwr-toplink</artifactId>
     <packaging>jar</packaging>
     <inceptionYear>2009</inceptionYear>
-    <version>0.3-SNAPSHOT</version>
+    <version>0.3</version>
     <name>dwr-toplink</name>
     <url>http://github.com/danielfm/dwr-toplink/tree</url>
     <description>DWR-TopLink is a TopLink-aware bean converter for DWR that ignores
