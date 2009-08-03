@@ -25,10 +25,10 @@ import org.directwebremoting.extend.MarshallException;
 import org.directwebremoting.extend.Property;
 
 /**
- * BeanConverter that works with Toplink to get BeanInfo.
+ * BeanConverter that works with TopLink.
  * @author Daniel Martins [daniel at destaquenet dot com]
  */
-public class ToplinkConverter extends BeanConverter {
+public class TopLinkConverter extends BeanConverter {
 
     /* (non-Javadoc)
      * @see org.directwebremoting.convert.BeanConverter#getPropertyMapFromObject(java.lang.Object, boolean, boolean)
@@ -61,7 +61,7 @@ public class ToplinkConverter extends BeanConverter {
                     continue;
                 }
 
-                properties.put(name, new ToplinkPropertyDescriptorProperty(descriptor));
+                properties.put(name, new TopLinkPropertyDescriptorProperty(descriptor));
             }
 
             return properties;

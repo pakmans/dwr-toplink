@@ -22,18 +22,18 @@ import org.directwebremoting.extend.MarshallException;
 import org.directwebremoting.impl.PropertyDescriptorProperty;
 
 /**
- * A {@link Property} that catches Toplink exceptions.
- * This is useful for Toplink  where lazy loading results in an exception
+ * A {@link Property} that catches TopLink exceptions.
+ * This is useful for TopLink  where lazy loading results in an exception
  * and you are unable to detect and prevent this.
  * @author Daniel Martins [daniel at destaquenet dot com]
  */
-public class ToplinkPropertyDescriptorProperty extends PropertyDescriptorProperty {
+public class TopLinkPropertyDescriptorProperty extends PropertyDescriptorProperty {
 
     /**
      * Simple constructor
      * @param descriptor The PropertyDescriptor that we are proxying to
      */
-    public ToplinkPropertyDescriptorProperty(PropertyDescriptor descriptor) {
+    public TopLinkPropertyDescriptorProperty(PropertyDescriptor descriptor) {
         super(descriptor);
     }
 
