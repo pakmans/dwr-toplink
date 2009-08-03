@@ -1,7 +1,7 @@
 DWR-TopLink
 -----------
 
-DWR-TopLink is a TopLink[1]-aware bean converter for DWR[2] 3 that ignores
+DWR-TopLink is a TopLink[1]-aware bean converter for DWR[2] that ignores
 non-initialized lazy relationships during the serialization step.
 
 This is an open source project licenced under the terms of the Apache 2.0

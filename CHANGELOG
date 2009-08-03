@@ -1,12 +1,18 @@
 Changelog
 ---------
 
-Version 0.1
-- First public release.
+Version 0.3
+- The project now depends on DWR 2.x since the the same code works both on
+  DWR 2 and DWR 3 without any changes.
+
 
 Version 0.2
 - Small fixes on the POM file.
 - Capitalization change in several places (from 'Toplink' to 'TopLink').
+
+
+Version 0.1
+- First public release.
 
 
 --EOF
