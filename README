@@ -24,7 +24,7 @@ able to do this, you must first install it in your local repository either by:
 installing it in your local repository:
 
     $ mvn install:install-file -DgroupId=com.destaquenet -DartifactId=dwr-toplink \
-                               -Dversion=LIB_VERSION_HERE -Dpackaging=jar
+                               -Dversion=LIB_VERSION_HERE -Dpackaging=jar \
                                -Dfile=/path/to/file
 
 
