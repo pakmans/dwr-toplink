@@ -40,6 +40,14 @@ non-initialized lazy relationships during the serialization step.
             <timezone>-3</timezone>
             <url>http://weblog.destaquenet.com/</url>
         </developer>
+        <developer>
+            <id>pakmans</id>
+            <name>Pablo Krause Mantilla</name>
+            <email>pablokrause@yahoo.com</email>
+            <organization>Gucoba</organization>
+            <organizationUrl>http://www.gucoba.com/</organizationUrl>
+            <timezone>-6</timezone>
+        </developer>
     </developers>
 
     <dependencies>
@@ -54,6 +62,13 @@ non-initialized lazy relationships during the serialization step.
             <artifactId>toplink-essentials</artifactId>
             <version>2.1-60f</version>
         </dependency>
+        
+        <dependency>
+            <groupId>org.eclipse.persistence</groupId>
+            <artifactId>eclipselink</artifactId>
+            <version>2.0.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
     <repositories>
@@ -62,6 +77,11 @@ non-initialized lazy relationships during the serialization step.
             <name>Java.Net Maven1 Repository</name>
             <url>http://download.java.net/maven/1</url>
             <layout>legacy</layout>
+        </repository>
+        <repository>
+            <id>eclipselink</id>
+            <name>Repositorio de Eclipse</name>
+            <url><![CDATA[http://www.eclipse.org/downloads/download.php?r=1&nf=1&file=/rt/eclipselink/maven.repo]]></url>
         </repository>
     </repositories>
 
